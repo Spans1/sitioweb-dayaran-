@@ -336,40 +336,20 @@ cursor: pointer;
   }
 }
 
-.syrdia-content {
-  display: flex; /* Organiza la imagen y el texto en una fila */
-  align-items: center; /* Centra verticalmente la imagen y el texto */
-  gap: 2rem; /* Espaciado entre la imagen y el texto */
+.syrdia-section {
+  text-align: center; /* Centra el contenido de la sección */
+  padding: 2rem 1rem;
 }
 
-.syrdia-image-container {
-  flex: 1; /* La imagen ocupará un espacio proporcional */
-  display: flex; /* Asegura que el contenido interno esté alineado */
-  align-items: center; /* Centra la imagen verticalmente */
-  justify-content: center; /* Centra la imagen horizontalmente */
-}
-
-.syrdia-img {
-  max-width: 100%; /* La imagen no excederá el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  border-radius: 8px; /* Opcional: bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
-}
-
-.syrdia-text {
-  flex: 2; /* El texto ocupará más espacio que la imagen */
-  text-align: justify; /* Alinea el texto a la izquierda */
-}
-
-.syrdia-text h3 {
-  margin-top: 1.5rem; /* Espaciado superior */
-  margin-bottom: 1rem; /* Espaciado inferior */
-  font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
-  font-weight: bold; /* Asegura que el título sea destacado */
+.syrdia-video-container {
+  display: flex;
+  justify-content: center; /* Centra el video horizontalmente */
+  align-items: center; /* Centra el video verticalmente si es necesario */
+  margin-top: 2rem; /* Espaciado superior */
 }
 
 .syrdia-video {
-  max-width: 50%; /* Asegura que el video no exceda el ancho del contenedor */
+  max-width: 50%; /* Ajusta el tamaño máximo del video */
   height: auto; /* Mantiene la proporción del video */
   border-radius: 8px; /* Opcional: bordes redondeados */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
