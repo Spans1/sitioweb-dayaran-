@@ -369,7 +369,7 @@ cursor: pointer;
 }
 
 .syrdia-video {
-  max-width: 100%; /* Asegura que el video no exceda el ancho del contenedor */
+  max-width: 50%; /* Asegura que el video no exceda el ancho del contenedor */
   height: auto; /* Mantiene la proporción del video */
   border-radius: 8px; /* Opcional: bordes redondeados */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
