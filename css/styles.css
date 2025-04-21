@@ -1,0 +1,369 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Inter', sans-serif;
+}
+
+body {
+background-color: #f8f9fa;
+color: #333;
+}
+
+header {
+  background: linear-gradient(90deg, #0056b3, #00aaff);
+  color: white;
+  padding: 1rem 2rem; /* Ajusta el espaciado */
+  text-align: center; /* Centra el texto */
+  display: flex;
+  flex-direction: column; /* Cambia la dirección del contenido a columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+}
+
+header h1 {
+  font-size: 1.8rem; /* Ajusta el tamaño del título */
+  margin: 0;
+}
+
+header p {
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espaciado entre el logo y el texto */
+}
+
+.logo {
+  width: 120px; /* Aumenta el tamaño del logo */
+  height: auto; /* Mantén la proporción del logo */
+  margin-right: auto; /* Alinea el logo a la izquierda */
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 80px; /* Tamaño más pequeño para pantallas móviles */
+  }
+
+  .logo-container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+  }
+}
+
+nav {
+display: flex;
+justify-content: center;
+gap: 2rem;
+background-color: #003d80;
+padding: 1rem;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: 600;
+}
+
+section {
+padding: 3rem 2rem;
+}
+
+.section-title {
+font-size: 2rem;
+margin-bottom: 1rem;
+color: #0056b3;
+}
+
+.subsection {
+margin-top: 1.5rem;
+}
+
+.services {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.5rem;
+}
+
+.card {
+background-color: white;
+border-radius: 12px;
+padding: 1.5rem;
+box-shadow: 0 15px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+font-size: 2rem;
+color: #ffaa00;
+margin-bottom: 0.5rem;
+}
+
+.testimonios {
+  background-color: #e6f0ff;
+  padding: 2rem;
+  text-align: left;
+}
+
+.testimonios .testimonio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.testimonios .testimonio-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columnas */
+  gap: 1.5rem; /* Espaciado entre los testimonios */
+}
+
+.testimonios .testimonio p {
+  font-style: italic;
+  color: #333;
+  max-width: 90%;
+}
+
+#nosotros {
+  padding: 2rem 1rem;
+  background-color: #f9f9f9; /* Fondo claro para diferenciar la sección */
+  color: #333; /* Color del texto */
+}
+
+#nosotros h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+#nosotros h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0056b3; /* Color destacado para los subtítulos */
+}
+
+#nosotros p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+#nosotros ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
+}
+
+#nosotros ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+background-color: #003366;
+color: white;
+text-align: center;
+padding: 2rem 1rem;
+}
+
+
+.chat-button,
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 0px; /* Alineado a la derecha */
+    background-color: #ffaa00;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+}
+
+.whatsapp-button {
+    right: 20px;
+    background-color: #25D366;
+  }
+  
+
+.chat-button {
+right: 90px;
+background-color: #ffaa00;
+}
+
+.chatbox {
+display: none;
+position: fixed;
+bottom: 90px;
+right: 20px;
+width: 300px;
+max-height: 400px;
+background-color: white;
+border-radius: 12px;
+box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+overflow: hidden;
+z-index: 1000;
+display: flex;
+flex-direction: column;
+}
+
+.chat-header {
+background-color: #0056b3;
+color: white;
+padding: 0.8rem;
+font-weight: bold;
+}
+
+.chat-messages {
+flex: 1;
+padding: 0.8rem;
+overflow-y: auto;
+font-size: 0.9rem;
+}
+
+.chat-input {
+display: flex;
+border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+flex: 1;
+padding: 0.5rem;
+border: none;
+}
+
+.chat-input button {
+background-color: #ffaa00;
+border: none;
+color: white;
+padding: 0 1rem;
+cursor: pointer;
+}
+
+#contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  #contacto form {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #contacto textarea {
+    height: 150px;
+    resize: vertical;
+  }
+
+  .info-contacto {
+    flex: 1;
+    min-width: 250px;
+  }
+
+  #contacto button {
+    align-self: flex-end;
+    padding: 0.5rem 1rem;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Cambia el menú de navegación a una columna */
+    gap: 1rem;
+  }
+
+  .services {
+    grid-template-columns: 1fr; /* Una columna para servicios */
+  }
+
+  .testimonios-grid {
+    grid-template-columns: 1fr; /* Una columna para testimonios */
+  }
+
+  #contacto {
+    flex-direction: column; /* Cambia la disposición de contacto a una columna */
+    align-items: center;
+  }
+
+  #contacto form,
+  .info-contacto {
+    width: 100%; /* Ocupan todo el ancho */
+    min-width: unset; /* Elimina el ancho mínimo */
+  }
+}
+
+/* Estilos para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+  .services {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para servicios */
+  }
+
+  .testimonios-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para testimonios */
+  }
+
+  #contacto form,
+  .info-contacto {
+    flex: 1;
+    min-width: 300px; /* Mantén un ancho mínimo */
+  }
+}
+
+.syrdia-content {
+  display: flex; /* Organiza la imagen y el texto en una fila */
+  align-items: center; /* Centra verticalmente la imagen y el texto */
+  gap: 2rem; /* Espaciado entre la imagen y el texto */
+}
+
+.syrdia-image-container {
+  flex: 1; /* La imagen ocupará un espacio proporcional */
+  display: flex; /* Asegura que el contenido interno esté alineado */
+  align-items: center; /* Centra la imagen verticalmente */
+  justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.syrdia-img {
+  max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 8px; /* Opcional: bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
+}
+
+.syrdia-text {
+  flex: 2; /* El texto ocupará más espacio que la imagen */
+  text-align: justify; /* Alinea el texto a la izquierda */
+}
+
+.syrdia-text h3 {
+  margin-top: 1.5rem; /* Espaciado superior */
+  margin-bottom: 1rem; /* Espaciado inferior */
+  font-size: 1.5rem; /* Ajusta el tamaño del texto si es necesario */
+  font-weight: bold; /* Asegura que el título sea destacado */
+}
