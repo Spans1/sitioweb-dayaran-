@@ -354,3 +354,27 @@ cursor: pointer;
   border-radius: 8px; /* Opcional: bordes redondeados */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra */
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.g-recaptcha {
+  margin: 1rem 0;
+}
+
+button[type="submit"] {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+  background-color: #003d80;
+}
